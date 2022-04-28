@@ -1,0 +1,40 @@
+public static  void main(String[] args) {
+        produto produto = new produto();
+        Cliente Cliente = new Cliente();
+        Cliente.nomeCliente = "Felipe";
+        Cliente.sobreNome = "Santos";
+        Cliente.numero = 27.996633879;
+        Cliente.email = "teste@gmail.com";
+        produto.nome = "Samsung Galaxy S20 Ultra";
+        produto.estoque = 10;
+        produto.precounitario = 5.894;
+        System.out.println("Nome Cliente: " + Cliente.nomeCliente);
+        System.out.println("Sobre nome: " + Cliente.sobreNome);
+        System.out.println("Numero de telefone: " + Cliente.numero);
+        System.out.println("Seu Email " + Cliente.email);
+        if (produto.estoque <=10){
+            System.out.println("Produto em falta temos apenas "+ produto.estoque);
+        }else{
+            exibirproduto(produto);
+            precoproduto(produto);
+            estoque(produto);
+
+        }
+    }
+    static void exibirproduto(produto produto){
+        System.out.println("celular" + " " + produto.nome);
+    }
+    static boolean seFornecessarioreporEstoque(produto produto){
+        return produto.estoque < produto.estoque;
+    }
+    static void precoproduto(produto produto){
+        System.out.println("Preço " + produto.precounitario);
+    }
+    static void estoque (produto produto){
+        System.out.println("Total em Estoque "+ produto.estoque);
+    }
+    static void nomeCliente(String texto){
+
+    }
+
+}
